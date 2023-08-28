@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:paddingLeft="24dp"
+    android:paddingRight="24dp"
+    android:paddingTop="26dp"
+    tools:context=".ui.home.amr.DetailAmrActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextView.PoppinsNormal16sp020202"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/poppins"
+                android:text="ID Petugas" />
+
+            <EditText
+                android:id="@+id/etIDpetugas"
+                style="@style/EditText.PoppinsNormal14sp8D92A3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/shape_rectangle_outline_8_020202"
+                android:hint="Enter ID Petugas"
+                android:inputType="number"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/tvULP"
+                style="@style/TextView.PoppinsNormal16sp020202"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Nama" />
+
+            <EditText
+                android:id="@+id/etULP"
+                style="@style/EditText.PoppinsNormal14sp8D92A3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/shape_rectangle_outline_8_020202"
+                android:hint="Enter ULP"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/tvKDunit"
+                style="@style/TextView.PoppinsNormal16sp020202"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Kode Unit" />
+
+            <EditText
+                android:id="@+id/etKDunit"
+                style="@style/EditText.PoppinsNormal14sp8D92A3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/shape_rectangle_outline_8_020202"
+                android:hint="Enter Kode Unit"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/tvIdPel"
+                style="@style/TextView.PoppinsNormal16sp020202"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="ID Pelanggan" />
+
+            <EditText
+                android:id="@+id/etIdPel"
+                style="@style/EditText.PoppinsNormal14sp8D92A3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/shape_rectangle_outline_8_020202"
+                android:hint="Enter ID Pelanggan"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/tvNamaPel"
+                style="@style/TextView.PoppinsNormal16sp020202"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Nama Pelanggan" />
+
+            <EditText
+                android:id="@+id/etNamaPel"
+                style="@style/EditText.PoppinsNormal14sp8D92A3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/shape_rectangle_outline_8_020202"
+                android:hint="Enter Nama Pelanggan"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/textViewAlamat"
+                style="@style/TextView.PoppinsNormal16sp020202"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Alamat" />
+
+            <EditText
+                android:id="@+id/etAlamat"
+                style="@style/EditText.PoppinsNormal14sp8D92A3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/shape_rectangle_outline_8_020202"
+                android:hint="Enter alamat"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/tvTarif"
+                style="@style/TextView.PoppinsNormal16sp020202"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Tarif" />
+
+            <EditText
+                android:id="@+id/etTarif"
+                style="@style/EditText.PoppinsNormal14sp8D92A3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/shape_rectangle_outline_8_020202"
+                android:hint="Enter Tarif"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/tvDaya"
+                style="@style/TextView.PoppinsNormal16sp020202"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Daya" />
+
+            <EditText
+                android:id="@+id/etDaya"
+                style="@style/EditText.PoppinsNormal14sp8D92A3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/shape_rectangle_outline_8_020202"
+                android:hint="Enter Daya"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/tvPeta"
+                style="@style/TextView.PoppinsNormal16sp020202"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Peta" />
+
+            <EditText
+                android:id="@+id/etPeta"
+                style="@style/EditText.PoppinsNormal14sp8D92A3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/shape_rectangle_outline_8_020202"
+                android:hint="Enter Peta"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/tvTipe"
+                style="@style/TextView.PoppinsNormal16sp020202"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Tipe" />
+
+            <EditText
+                android:id="@+id/etTipe"
+                style="@style/EditText.PoppinsNormal14sp8D92A3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/shape_rectangle_outline_8_020202"
+                android:hint="Enter Tipe"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/tvKelainan"
+                style="@style/TextView.PoppinsNormal16sp020202"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Kelainan" />
+
+            <EditText
+                android:id="@+id/etKelainan"
+                style="@style/EditText.PoppinsNormal14sp8D92A3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/shape_rectangle_outline_8_020202"
+                android:hint="Enter Kelainan"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/tvPetugas"
+                style="@style/TextView.PoppinsNormal16sp020202"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Petugas" />
+
+            <EditText
+                android:id="@+id/etPetugas"
+                style="@style/EditText.PoppinsNormal14sp8D92A3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/shape_rectangle_outline_8_020202"
+                android:hint="Enter Petugas"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/tvStatus"
+                style="@style/TextView.PoppinsNormal16sp020202"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Status" />
+
+
+
+            <RadioGroup
+                android:id="@+id/radioGroupStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbSudah"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sudah" />
+
+                <RadioButton
+                    android:id="@+id/rbBelum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Belum" />
+
+                <RadioButton
+                    android:id="@+id/rbTunda"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tunda" />
+
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/tvAlasanTunda"
+                style="@style/TextView.PoppinsNormal16sp020202"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Alasan Tunda" />
+
+            <EditText
+                android:id="@+id/etAlasanTunda"
+                style="@style/EditText.PoppinsNormal14sp8D92A3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/shape_rectangle_outline_8_020202"
+                android:hint="Enter Alasan Tunda"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/tvKetTunda"
+                style="@style/TextView.PoppinsNormal16sp020202"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Keterangan Tunda" />
+
+            <EditText
+                android:id="@+id/etKetTunda"
+                style="@style/EditText.PoppinsNormal14sp8D92A3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/shape_rectangle_outline_8_020202"
+                android:hint="Enter Keterangan Tunda"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/tvTanggalTL"
+                style="@style/TextView.PoppinsNormal16sp020202"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Tanggal TL" />
+
+            <EditText
+                style="@style/EditText.PoppinsNormal14sp8D92A3"
+                android:id="@+id/editTextSelectedDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:hint="Tanggal Dipilih"
+                android:clickable="false"
+                android:focusable="false"
+                android:inputType="none"
+                android:background="@drawable/shape_rectangle_outline_8_020202"
+                android:padding="10dp"/>
+
+            <TextView
+                android:id="@+id/tvMerekMeterLama"
+                style="@style/TextView.PoppinsNormal16sp020202"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Merek Meter Lama" />
+
+            <EditText
+                android:id="@+id/etMerekMeterLama"
+                style="@style/EditText.PoppinsNormal14sp8D92A3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/shape_rectangle_outline_8_020202"
+                android:hint="Enter Merek Meter Lama"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/tvNoMeterLama"
+                style="@style/TextView.PoppinsNormal16sp020202"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="No Meter Lama" />
+
+            <EditText
+                android:id="@+id/etNoMeterLama"
+                style="@style/EditText.PoppinsNormal14sp8D92A3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/shape_rectangle_outline_8_020202"
+                android:hint="Enter No Meter Lama"
+                android:padding="10dp" />
+
+            <TextView
+                style="@style/TextView.PoppinsNormal16sp020202"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Sisa Token Lama" />
+
+            <EditText
+                android:id="@+id/etSisaTokenLama"
+                style="@style/EditText.PoppinsNormal14sp8D92A3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/shape_rectangle_outline_8_020202"
+                android:hint="Enter Sisa Token Lama"
+                android:padding="10dp" />
+
+            <TextView
+                style="@style/TextView.PoppinsNormal16sp020202"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Foto App Lama" />
+
+            <ImageView
+                android:id="@+id/imageViewSelectedPhotoAmr"
+                android:layout_width="match_parent"
+                android:layout_height="101dp"
+                android:layout_below="@id/editTextSelectedDate"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_picture_empty" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonSelectPhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageViewSelectedPhoto"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:text="Pilih Foto" />
+
+            <TextView
+                style="@style/TextView.PoppinsNormal16sp020202"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Merk Meter Baru" />
+
+            <EditText
+                android:id="@+id/etMerkMeterBaru"
+                style="@style/EditText.PoppinsNormal14sp8D92A3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/shape_rectangle_outline_8_020202"
+                android:hint="Enter Merk Meter Baru"
+                android:padding="10dp" />
+
+            <TextView
+                style="@style/TextView.PoppinsNormal16sp020202"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="No Meter Baru" />
+
+            <EditText
+                android:id="@+id/etNomorMeterBaru"
+                style="@style/EditText.PoppinsNormal14sp8D92A3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/shape_rectangle_outline_8_020202"
+                android:hint="Enter No Meter Baru"
+                android:padding="10dp" />
+
+            <TextView
+                style="@style/TextView.PoppinsNormal16sp020202"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Sisa Token Baru" />
+
+            <EditText
+                android:id="@+id/etSisaTokenBaru"
+                style="@style/EditText.PoppinsNormal14sp8D92A3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/shape_rectangle_outline_8_020202"
+                android:hint="Enter Sisa Token Baru"
+                android:padding="10dp" />
+
+            <TextView
+                style="@style/TextView.PoppinsNormal16sp020202"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Foto App Baru" />
+
+            <ImageView
+                android:id="@+id/ivFotoAppBaru"
+                android:layout_width="match_parent"
+                android:layout_height="101dp"
+                android:layout_below="@id/editTextSelectedDate"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_picture_empty" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnFotoAppBaru"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ivFotoAppBaru"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:text="Pilih Foto" />
+
+            <TextView
+                style="@style/TextView.PoppinsNormal16sp020202"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="No Hp Pelanggan" />
+
+            <EditText
+                android:id="@+id/etNoHpPelanggan"
+                style="@style/EditText.PoppinsNormal14sp8D92A3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/shape_rectangle_outline_8_020202"
+                android:hint="Enter No Hp Pelanggan"
+                android:padding="10dp" />
+
+            <TextView
+                style="@style/TextView.PoppinsNormal16sp020202"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Teken Pelanggan" />
+
+            <ImageView
+                android:id="@+id/ivTekenPelanggan"
+                android:layout_width="match_parent"
+                android:layout_height="101dp"
+                android:layout_below="@id/editTextSelectedDate"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_picture_empty" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnTekenPelanggan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ivFotoAppBaru"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:text="Pilih Foto" />
+
+            <TextView
+                style="@style/TextView.PoppinsNormal16sp020202"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Nama Pelaggan" />
+
+            <EditText
+                android:id="@+id/etNamaPelanggan"
+                style="@style/EditText.PoppinsNormal14sp8D92A3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/shape_rectangle_outline_8_020202"
+                android:hint="Enter Nama Pelanggan"
+                android:padding="10dp" />
+
+            <TextView
+                style="@style/TextView.PoppinsNormal16sp020202"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Nama Petugas" />
+
+            <EditText
+                android:id="@+id/etNamaPetugas"
+                style="@style/EditText.PoppinsNormal14sp8D92A3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/shape_rectangle_outline_8_020202"
+                android:hint="Enter Nama Petugas"
+                android:padding="10dp" />
+
+            <TextView
+                style="@style/TextView.PoppinsNormal16sp020202"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="No Berita Acara" />
+
+            <EditText
+                android:id="@+id/etBeritaAcara"
+                style="@style/EditText.PoppinsNormal14sp8D92A3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/shape_rectangle_outline_8_020202"
+                android:hint="Enter No Berita Acara"
+                android:padding="10dp" />
+
+            <TextView
+                style="@style/TextView.PoppinsNormal16sp020202"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Keterangan" />
+
+            <EditText
+                android:id="@+id/etKeterangan"
+                style="@style/EditText.PoppinsNormal14sp8D92A3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/shape_rectangle_outline_8_020202"
+                android:hint="Enter Keterangan"
+                android:padding="10dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSave"
+                style="@style/Button.Primary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Save" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

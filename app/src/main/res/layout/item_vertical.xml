@@ -1,0 +1,59 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/holo_blue_light"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textViewIdPelanggan"
+            style="@style/TextView.PoppinsNormal16sp020202"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID Pelanggan           : "
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewNamaPelanggan"
+            style="@style/TextView.PoppinsNormal16sp020202"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama Pelanggan       : "
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textViewTarif"
+            style="@style/TextView.PoppinsNormal16sp020202"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tarif                                  : "
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textViewDaya"
+            style="@style/TextView.PoppinsNormal16sp020202"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Daya                                : "
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textViewStatus"
+            style="@style/TextView.PoppinsNormal16sp020202"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Status                              : "
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

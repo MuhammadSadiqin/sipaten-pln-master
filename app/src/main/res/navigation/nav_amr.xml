@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/amrFragment">
+
+
+    <fragment
+        android:id="@+id/amrFragment"
+        android:name="com.example.sipaten_pln.ui.home.amr.AmrFragment"
+        android:label="amr"
+        tools:layout="@layout/fragment_amr">
+
+       <action
+        android:id="@+id/action_AmrFragment_to_detailAmrFragment"
+        app:destination="@id/DetailAmrFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/DetailAmrFragment"
+        android:name="com.example.sipaten_pln.ui.home.amr.DetailAmrActivity"
+        android:label="Amrr"
+        tools:layout="@layout/activity_detail_amr">
+
+    </fragment>
+
+
+
+
+</navigation>
